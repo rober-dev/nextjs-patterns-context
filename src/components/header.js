@@ -23,7 +23,7 @@ const Header = () => {
     try {
       logIn(username, password);
     } catch (err) {
-      setMessage('Datos de usuario incorrectos');
+      setMessage(err.message);
     }
   };
 
@@ -36,6 +36,10 @@ const Header = () => {
     <>
       <h3>Header</h3>
       <p>
+        <Link href='/'>
+          <a>Home</a>
+        </Link>
+        <span>&nbsp; | &nbsp;</span>
         <Link href='/profile'>
           <a>Profile</a>
         </Link>

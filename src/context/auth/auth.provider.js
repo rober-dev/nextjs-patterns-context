@@ -30,8 +30,6 @@ const AuthProvider = ({ children }) => {
   const logOut = () => {
     if (currentUser) {
       setCurrentUser(null);
-    } else {
-      alert('El usuario no está logueado');
     }
   };
 

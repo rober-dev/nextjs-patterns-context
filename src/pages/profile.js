@@ -21,8 +21,8 @@ const ProfilePage = () => {
       <h1>Profile page</h1>
       {currentUser && (
         <>
-          <span>Username : {currentUser.username}</span>
-          <span>Email : {currentUser.email}</span>
+          <p>Username : {currentUser.username}</p>
+          <p>Email : {currentUser.email}</p>
         </>
       )}
     </>
