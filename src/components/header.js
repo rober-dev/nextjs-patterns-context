@@ -40,10 +40,15 @@ const Header = () => {
           <a>Home</a>
         </Link>
         <span>&nbsp; | &nbsp;</span>
-        <Link href='/profile'>
-          <a>Profile</a>
-        </Link>
-        <span>&nbsp; | &nbsp;</span>
+        {currentUser && (
+          <>
+            <Link href='/profile'>
+              <a>Profile</a>
+            </Link>
+            <span>&nbsp; | &nbsp;</span>
+          </>
+        )}
+
         <Link href='/about'>
           <a>About</a>
         </Link>
